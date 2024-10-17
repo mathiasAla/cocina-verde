@@ -1,0 +1,697 @@
+/*Estilos generales*/
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: "RobotoRegular";
+	position: relative;
+	background-color: #fff;
+}
+
+
+
+.text-condensed{ 
+	font-family: "RobotoCondensedLight"; 
+}
+
+
+.text-tittles{ font-family: 
+	"OswaldLight"; 
+}
+
+
+.text-center{ 
+	text-align: center; 
+}
+
+.text-left{ 
+	text-align: left; 
+}
+
+
+.text-right{ 
+	text-align: right; 
+}
+
+
+.text-justify{ 
+	text-align: justify; 
+}
+
+
+.full-width{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+
+
+.list-unstyled{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+
+
+.img-responsive{
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+.divider{
+	height: 0 !important;
+	border-top: 1px solid #ECECEC;
+	width: 92% !important;
+	margin: 0 auto !important;
+}
+
+
+
+
+.cover{
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+}
+
+
+
+
+
+.center-box{
+	margin: 0 auto;
+	display: block;
+}
+
+
+
+
+.center-box-h-v{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+
+.mdl-textfield{
+	width: 100%;
+}
+
+
+
+/*Barra de navegacion */
+
+
+
+.NavBar{
+	height: 50px;
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	color: #fff;
+}
+
+
+
+.NavBar-logo,
+.NavBar-nav{
+	height: 50px;
+	line-height: 50px;
+	float: left;
+}
+
+
+
+.NavBar-logo{
+	font-size: 27px;
+	width: 30%;
+}
+
+
+
+.NavBar-logo figure{
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	padding: 0;
+	display: block;
+}
+
+
+
+
+.NavBar-nav{
+	width: 70%;
+	text-align: right;
+}
+
+
+
+.NavBar-nav li,
+.NavBar-nav li a{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	height: 50px;
+}
+
+
+
+
+.NavBar-nav li{
+	display: inline-block;
+}
+
+
+
+.NavBar-nav li a{
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+	font-family: "OswaldLight";
+	font-size: 17px;
+	padding: 0 7px;
+	transition: all .3s ease-in-out;
+	font-weight: bold;
+}
+
+
+
+
+.NavBar-nav li a:hover{
+	color: #D4AC0D;
+}
+
+
+
+.NavBar-nav li a:active,
+.NavBar-nav li a:focus{
+	outline: none;
+}
+
+
+
+/*Pie de pagina */
+.mdl-mega-footer{
+	background-color: #000;
+}
+
+
+
+/*Contenedores de plantillas */
+.template{
+	max-height: 500px;
+	min-height: 400px;
+	max-width: 370px;
+	position: relative;
+	margin: 10px auto;
+	display: block;
+	border-radius: 4px;
+	border: 1px solid #E1E1E1;
+}
+
+
+
+.template-img{
+	height: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	border-radius: 4px;
+	z-index: 1;
+}
+
+
+
+.template-img img{
+	border-radius: 4px;
+}
+
+
+.template-description{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 64px;
+	background-color: #fff;
+	z-index: 2;
+}
+
+
+
+.template-description p,
+.template-description a{
+	height: 100%;
+	position:absolute;
+	top: 0;
+	border-top: 1px solid #E1E1E1;
+}
+
+
+
+.template-description p{
+	width: 80%;
+	left: 0;
+	border-right: 1px solid #E1E1E1;
+	padding: 0 10px;
+	font-size: 17px;
+}
+
+
+
+.template-description a{
+	width: 20%;
+	right: 0;
+	text-align: center;
+}
+
+
+
+.template-description a:hover{
+	background-color: rgb(240,240,240);
+}
+
+
+
+.template-description a i{
+	width: 100%;
+	height: 100%;
+	line-height: 64px;
+	color: #333;
+	font-size: 20px;
+}
+
+
+
+
+/*Estilos index.html*/
+
+/*Encabezado*/
+.header{
+	height: 100%;
+	position: relative;
+	background-attachment: inherit;
+	background-image: url(../assets/img/comidachilena.jpg);
+	overflow: hidden;
+}
+
+
+
+.header-content{
+	padding: 50px 0;
+	position: relative;
+	height: 100%;
+	background-color: rgba(0,0,0,.6);
+}
+
+
+
+.header-content-div{
+	width: 100%;
+	color: #fff;
+}
+
+
+.header-content-div ul li{
+	display: inline-block;
+	width: 300px;
+}
+
+
+.header-content-div ul li a{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	box-sizing: border-box;
+	padding: 15px;
+	margin: 15px;
+	transition: all .3s ease-in-out;
+}
+
+
+.header-content-div ul li a:hover{
+	background-color: rgba(0,0,0,.4);
+}
+
+
+.header-content-div ul li a i{
+	font-size: 30px;
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+	border-radius: 100%;
+	border: 1px solid rgba(255,255,255,.5);
+}
+
+
+/*Seccion framework */
+.tecnologies{
+	padding: 35px 0;
+}
+
+
+.tecnologies-content{
+	padding: 10px;
+}
+
+
+.tecnologies-content i{
+	color: #0288D1;
+}
+
+
+.framework-icon{
+	width: 170px;
+}
+
+
+.browser-icon{
+	width: 120px;
+}
+
+
+
+/*Seccion mision y vision */
+
+
+
+.mision-vision{
+	background-image: url(../assets/img/index-MV.jpg);
+	background-attachment: inherit;
+	color: #FFF;
+	min-height: 500px;
+}
+
+
+
+.mision-vision-content{
+	height: 100%;
+	position: relative;
+	min-height: 500px;
+	background-color: rgba(0,0,0,.4);
+}
+
+
+
+/*Desarrolladores y contacto */
+.contact{
+	background-color: #FAFAFA;
+	padding: 60px 0;
+}
+
+
+
+.developer-content{
+	margin-bottom: 25px;
+}
+
+
+
+.developer-content figure img{
+	width: 140px;
+	border-radius: 100%;
+}
+
+
+
+.developer-content figure figcaption{
+	padding: 10px 0;
+}
+
+
+
+.developer-content ul li{
+	display: inline-block;
+}
+
+
+
+.developer-content ul li a{
+	outline: none;
+	font-size: 23px;
+	padding: 5px;
+	margin: 0 2px;
+	color: #3F51B5;
+}
+
+
+
+/*Estilos sesion.html*/
+.card-container{
+	padding: 10px;
+}
+
+
+
+.card-sesion{
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+
+.card-sesion-border{
+	height: 7px;
+}
+
+
+
+.mdl-card__supporting-text{
+	height: 127px;
+	overflow-y: hidden;
+}
+
+
+
+.mdl-card__supporting-text:hover{
+	overflow-y: scroll;
+}
+
+
+
+/*Celular*/
+@media (max-width: 479px){
+	.hide-on-phone{
+		width: 0 !important;
+		height: 0 !important;
+		pointer-events: none !important;
+		opacity: 0 !important;
+	}
+
+
+
+	.visible-on-phone{
+		pointer-events: auto !important;
+		opacity: 1 !important;
+	}
+
+
+
+	.visible-on-tablet,
+	.visible-on-desktop{
+		pointer-events: none !important;
+		opacity: 0 !important;
+		width: 0 !important;
+		height: 0 !important;
+	}
+
+
+
+	.No-Scroll{
+		overflow: hidden !important;	
+	}
+
+
+
+	/*Barra de navegacion*/
+	.NavBar-logo{
+		width: 100%;
+		font-size: 22px;
+	}
+
+
+
+	.NavBar-nav{
+		position: fixed;
+		width: 100%;
+		height: 0;
+		background-color: #000;
+		z-index: 17;
+		top: 50px;
+		border-top: 1px solid rgba(255,255,255,.2);
+		transition: all .3s ease-in-out;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+
+
+	.NavBar-nav li{
+		display: block;
+	}
+
+
+
+	.NavBar-nav li a{
+		padding: 0;
+		text-align: center;
+	}
+
+
+
+	.NavBar-show{
+		height: 100%;
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+
+
+	.btn-menu-mobile{
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 50px;
+		width: 50px;
+		line-height: 50px;
+		font-size: 25px;
+		margin: 0;
+		cursor: pointer;
+		z-index: 7;
+		text-align: center;
+	}
+
+
+
+	/*========= Header index */
+	.header-content-div ul li a{
+		margin: 7px 0;
+	}
+}
+
+/*Tablet*/
+@media (min-width: 480px) and (max-width: 839px){
+	.hide-on-tablet{
+		width: 0 !important;
+		height: 0 !important;
+		pointer-events: none !important;
+		opacity: 0 !important;
+	}
+
+
+
+	.visible-on-tablet{
+		pointer-events: auto !important;
+		opacity: 1 !important;
+	}
+
+
+	
+	.visible-on-desktop,
+	.visible-on-phone{
+		pointer-events: none !important;
+		opacity: 0 !important;
+		width: 0 !important;
+		height: 0 !important;
+	}
+}
+
+
+
+/* MAIN REGISTRAR.CSS */
+main{
+    background-color: #f6f7f9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+
+/* REGISTRAR.CSS */
+
+.main h3{
+    font-size: 22px;
+    color: #222529;
+}
+main label{
+    color: #000000;
+    font-size: 14px;
+	font-weight: bold;
+}
+main h2{
+    color: #c10000;
+    font-size: 14px;
+}
+.main input{
+    width: 100%;
+    padding: 0;
+}
+.msg{
+    padding-top: 1rem;
+    display: flex;
+    column-gap: 0.5rem;
+}
+.aceptar-terminos-condiciones{
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: baseline;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.aceptar-terminos-condiciones h4{
+    font-size: 14px;
+    color: #222529;
+	font-weight: bold;
+
+}
+.aceptar-terminos-condiciones a{
+    font-size: 14px;
+    color: #c10000;
+	font-weight: bold;
+}
+.conifrmar-registro{
+    background-color: #000000;
+    width: 213.58px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1.3rem 3rem 1.3rem 3rem;
+    border: none;
+    border-radius: 12px;
+}
+
+
+
+/* CONFIRMACIONES EN EL JS EN EL REGISTRO */
+.correct{
+    border: 1px #13a01d8b solid !important;
+}
+.incorrect{
+    border: 1px #a013138b solid !important;
+}
+
+.texto-error{
+    text-align: center;
+    color: rgba(255, 0, 0, 0.616);
+    font-size: .9rem;
+    max-width: 200px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="Shortcut Icon" type="image/x-icon" href="./assets/icons/favicon.ico" />
+	<link rel="stylesheet" href="css/style.css">
+	<title>Iniciar</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+	<script src="js/main.js"></script>
+	<script src="js/registrar.js"></script>
+
+</head>
+<body>
+	<nav class="full-width NavBar">
+		<div class="full-width NavBar-logo text-tittles text-center">
+			<figure>
+				<img src="assets/img/LogoComida.png" alt="MaterialTemplate" class="img-responsive">
+			</figure>
+		</div>
+		<ul class="full-width list-unstyled NavBar-nav">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="premium.html">Premium</a></li>
+			<li><a href="free.html">Gratis</a></li>
+			<li><a href="sesion.html">Iniciar Sesion</a></li>
+		</ul>
+		<i class="zmdi zmdi-more-vert visible-on-phone btn-menu-mobile"></i>
+	</nav>
+	<main>
+		<h3>Registrarse</h3>	
+		
+
+		<div class="correo-registro">
+		  <div class="msg">
+			<label for="correo">Correo electrónico</label>
+		  </div>
+		  <input type="text" name="correo" id="correo" class="form-control" onkeyup="validarCorreo()">
+		  <p id="error-correo" class="texto-error">&nbsp;</p>
+	
+		</div>	
+		<div class="password-registro">
+		  <div class="msg">
+			<label for="clave">Contraseña</label>
+		  </div>
+		  <input type="password" name="clave" id="clave" class="form-control" onkeyup="validarPass()">
+		  <p id="error-contra" class="texto-error">&nbsp;</p>
+		</div>	
+		<div class="confirmar-password-registro">
+		  <div class="msg">
+			<label for="">Confirmar contraseña</label>
+		  </div>
+		  <input type="password" name="clave2" id="clave2" class="form-control" onkeyup="validarPass2()">
+		  <p id="error-contra2" class="texto-error">&nbsp;</p>
+		</div>
+		<div class="aceptar-terminos-condiciones">
+		  <input type="checkbox">
+		  <h4>He leído y acepto los</h4>
+		  <a href="#">términos y condiciones.</a>
+		</div>
+		<button class="conifrmar-registro">Registrarse</button>
+	  </main>
+</body>
+</html>
